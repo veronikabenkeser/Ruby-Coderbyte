@@ -1,0 +1,5 @@
+def VowelCount(str)
+  
+  return str.scan(/[a,i,o,u,e]/i).count
+         
+end
