@@ -1,0 +1,7 @@
+def LetterCapitalize(str)
+
+  arr= str.split(" ")
+  return arr.map{|x| x.capitalize!}.join(" ")
+         
+end
+   
