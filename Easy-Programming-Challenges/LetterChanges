@@ -5,10 +5,8 @@ def LetterChanges(str)
     loop do
         if str[i] =~ /[a-y]/i
             result +=str[i].next
-        elsif str[i] =~ /Z/
+        elsif str[i] =~ /[z]/i
             result+="A"
-        elsif str[i] =~ /z/
-            result +="a"
         else
             result += str[i]
         end
