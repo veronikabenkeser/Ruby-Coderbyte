@@ -1,0 +1,22 @@
+def ArithGeo(arr)
+
+arr = arr.sort{|a, b| b<=>a}
+diff = arr[0]- arr[1]
+multDiff = arr[0]/arr[1]
+
+newA = [arr[0]]
+newB = [arr[0]]
+
+newA.push(arr.map{|x| x-diff})
+newA.flatten!
+newA.pop
+
+newB.push(arr.map{|x| x/multDiff})
+newB.flatten!
+newB.pop
+
+return  "Arithmetic" if newA == arr
+return "Geometric" if newB==arr
+return -1
+    
+end
