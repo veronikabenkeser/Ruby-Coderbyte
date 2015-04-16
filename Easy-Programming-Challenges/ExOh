@@ -1,0 +1,5 @@
+def ExOh(str)
+
+  return str.scan(/o/i).size ==  str.scan(/x/i).size
+         
+end
