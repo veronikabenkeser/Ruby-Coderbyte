@@ -1,0 +1,10 @@
+def SimpleAdding(num)
+
+  result=0
+  for i in 1..num
+    result+=i
+  end
+  
+  return result
+         
+end
