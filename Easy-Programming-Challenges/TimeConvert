@@ -1,0 +1,6 @@
+def TimeConvert(num)
+
+  hr = num/60
+  min = num-hr*60
+  return "#{hr}:#{min}"
+end
