@@ -1,0 +1,5 @@
+def LetterChanges(str)
+  
+arr =str.split("")
+    return arr.map{|x| x.gsub(/[a-z]/i, x.next)}.map{|x| x.gsub(/aa/i, "A")}.join().gsub(/[aeuio]/){|x| x.upcase}
+end
