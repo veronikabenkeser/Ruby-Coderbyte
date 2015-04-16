@@ -1,0 +1,9 @@
+  for i in 0...str.length
+    if str[i] =~ /[a-z]/i
+        return false if str[i-1] != "+" || str[i+1] != "+"
+        end
+        i+=1
+    end
+  
+   return true
+end
