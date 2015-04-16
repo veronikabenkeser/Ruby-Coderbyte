@@ -1,5 +1,5 @@
 def AlphabetSoup(str)
   
-  return str.split("").sort!{|a,b| a<=>b}.join()
+  return str.split("").sort{|a,b| a<=>b}.join()
          
 end
