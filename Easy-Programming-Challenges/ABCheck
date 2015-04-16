@@ -1,0 +1,6 @@
+def ABCheck(str)
+
+  return true if str =~ /(a)...(b)/i
+  false
+         
+end
