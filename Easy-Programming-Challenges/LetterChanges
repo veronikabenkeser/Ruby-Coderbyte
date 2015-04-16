@@ -1,0 +1,21 @@
+def LetterChanges(str)
+    i=0
+    result=""
+    
+    loop do
+        if str[i] =~ /[a-y]/i
+            result +=str[i].next
+        elsif str[i] =~ /Z/
+            result+="A"
+        elsif str[i] =~ /z/
+            result +="a"
+        else
+            result += str[i]
+        end
+        i+=1
+        break if i ==str.length
+    end
+    
+   return result.gsub(/[auio]/){|x| x.upcase}
+         
+end
