@@ -1,0 +1,21 @@
+def OffLineMinimum(arr)
+
+str = arr.join(" ")  
+result =[]
+
+while str.include?("E")
+    ind = str.index("E")
+    subStr = str[0, ind]
+    minN = subStr.split(" ").min
+    indN = str.index(minN)
+    
+    result.push(minN)
+    
+    str.slice!(ind)
+    str.slice!(indN)
+    
+end
+
+return result.join(",")
+
+end
