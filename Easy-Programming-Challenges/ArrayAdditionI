@@ -14,7 +14,6 @@ def ArrayAdditionI(arr)
                 init =1
             end
         
-     
             if(i!=q)
                 sum+=arr[q]
                 return true if sum == max
