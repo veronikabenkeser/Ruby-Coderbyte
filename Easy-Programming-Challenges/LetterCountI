@@ -1,0 +1,8 @@
+# This method returns the word in which 1 letter is repeated the most number of times. Returns -1 if no word contains a repeated letter.
+
+def LetterCountI(str)
+
+  return -1 if str.split.all?{|w| w.length == w.split("").uniq.size}
+  str.split.max_by{|w| w.chars.map{|e| w.count(e)}}
+         
+end
