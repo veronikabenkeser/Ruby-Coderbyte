@@ -1,0 +1,38 @@
+def ArrayAdditionI(arr)
+
+    max= arr.max
+    arr.delete(max)
+
+    for i in 0...arr.size
+        init =0
+        sum=0
+        for q in 0...arr.size
+    
+            if (i!=q) && (init ==0)
+                sum+=arr[i]
+                return true if sum == max
+                init =1
+            end
+        
+     
+            if(i!=q)
+                sum+=arr[q]
+                return true if sum == max
+            end
+        
+            q+=1
+        end
+    
+        for k in 0...arr.size
+            if (i !=k)
+                sum-=arr[k]
+                return true if sum == max
+            end
+        
+            k+=1
+        end
+        i+=1
+    end
+ 
+   return false 
+end
